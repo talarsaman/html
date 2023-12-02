@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>library</title>
+        <br>
+        <br>
+        <h1><center>WELCOME TO THE LIBRARY</center></h1>
+    </head>
+    <body style="color: rgb(66, 92, 92);" background="book.jpg">
+
+     <form>
+    <center>
+        <br>
+        <h2>login form</h2>
+        <br>
+        <input type="email" id="email" name="email" placeholder="email" required>
+        <br>
+        <br>
+        <input type="password" id="password" name="password" placeholder="password" required>
+        <br>
+        <br>
+
+        <button type="button" onclick="validateLogin()">Login</button>
+        <script>
+            function validateLogin() {
+                var email = document.getElementById('email').value;
+                var password = document.getElementById('password').value;
+    
+                if (email && password) {
+                    window.open('librarymain.html', '_blank');
+                } else {
+                    alert('Please enter both email and password.');
+                }
+            }
+        </script>
+
+    </center>
+
+    </body>
+
+</html>
